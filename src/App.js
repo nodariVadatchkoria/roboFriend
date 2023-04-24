@@ -4,9 +4,8 @@ import CardList from "./CardList";
 import SearchBox from "./SearchBox";
 import './Card.css'
 
-searchChange = (event) => {
-    this.setState({searchfield: event.target.value})
-}
+
+
 
 class App extends Component {
     constructor() {
@@ -16,12 +15,21 @@ class App extends Component {
             searchfield: '',
         }
     }
+    onSearchChange = (event) => {
+        this.setState({searchfield: event.target.value})
+
+        console.log(event.target.value);
+        localStorage.setItem('searchfield', event.target.value);
+    }
 render(){
+    const filteredRobots = this.state.robots.filter(robot => {
+        return robot.name.toLowerCase().includes(this.state.searchfield.toLowerCase());
+    });
     return (
         <div className= 'tc pa3'>
             <h1>RoboFriends</h1>
-            <SearchBox/>
-            <CardList robots={this.state.robots} />
+            <SearchBox searchChange={this.onSearchChange}/>
+            <CardList robots={filteredRobots} />
         </div>
     );
 }

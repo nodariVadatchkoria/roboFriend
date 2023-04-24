@@ -1,0 +1,15 @@
+
+@font-face {
+    font-family: 'Scutum Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Scutum Regular'), url('fonts/Scutum-GOEem.woff') format('woff');
+}
+
+h1{
+    font-family: 'Scutum Regular', serif;
+    font-size: 3em;
+    color: #fff;
+    text-shadow: 0 0 10px #000;
+    font-weight: normal;
+}

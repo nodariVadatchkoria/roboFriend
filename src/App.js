@@ -3,6 +3,7 @@ import {robots} from "./Robots";
 import CardList from "./CardList";
 import SearchBox from "./SearchBox";
 import './Card.css'
+import './App.css'
 
 
 

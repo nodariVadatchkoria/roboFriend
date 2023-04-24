@@ -1,0 +1,13 @@
+.bg-light-green { background-color: #9eebcf; }
+.dib { display: inline-block; }
+.br3 { border-radius: .5rem; }
+.pa3 { padding: 1rem; }
+.ma2 { margin: .5rem; }
+.bw2 { border-width: .25rem; }
+.shadow-5 { box-shadow: 4px 4px 8px 0 rgba( 0, 0, 0, .2 ); }
+.grow { -moz-osx-font-smoothing: grayscale; -webkit-backface-visibility: hidden; backface-visibility: hidden; -webkit-transform: translateZ( 0 ); transform: translateZ( 0 ); transition: -webkit-transform .25s ease-out; transition: transform .25s ease-out; transition: transform .25s ease-out, -webkit-transform .25s ease-out; }
+.grow:hover, .grow:focus { -webkit-transform: scale( 1.1 ); transform: scale( 1.1 ); }
+.tc { text-align: center; }
+.ba { border-style: solid; border-width: 1px; }
+.b--green { border-color: #19a974; }
+.bg-lightest-blue { background-color: #cdecff; }
